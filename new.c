@@ -2,24 +2,28 @@
 
 int main() {
 
-    int n, r, a, b, i, m;
-    int permute;
+    int first_number, second_number;
+    int a, b;
+    int lcm, hcf;
 
-    printf("Calculate the permuation.\n");
-    printf("Enter the number of ways to arrange from(n).");
-    scanf("%d", &n);
-    printf("Enter the number of ways in which order it is to be arranged(r).");
-    scanf("%d", &r);
+    printf("Calculate the HCF and LCM of 2 numbers.\n");
+    printf("Enter first number: ");
+    scanf("%d", &first_number);
+    printf("Enter second number: ");
+    scanf("%d", &second_number);
 
-    for(a = 0; a < n; a++) {
-        b *=n;
+    a = first_number;
+    b = second_number;
+
+    while(b != 0) {
+        b = a % b;
     }
-    for(i = 0; i < r; i++) {
-        m *= r;
-    }
 
-    permute = b / m;
-    printf("The number of ways it can be arranged in is %d ways", permute);
+    hcf = b;
+    lcm = (first_number * second_number) / hcf;
+
+    printf("The Highest Common Factor of the 2 numbers is %d.\n", hcf);
+    printf("The lowest Common Multiple of the 2 numbers is %d.", lcm);
 
     return 0;
 }

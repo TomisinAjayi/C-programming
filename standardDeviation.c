@@ -9,7 +9,8 @@ int main() {
     float sum = 0.0;
     float m;//as mean
     float SD; //as standard deviation
-    float v;
+    float v=0.0f;
+    int j;
 
     printf("Calculate the standard deviation of 1-20 numbers.\n");
     printf("Enter the total number: ");
@@ -31,9 +32,10 @@ int main() {
     m = sum / n;
     //printf("the mean is %f. \n", m);
 
-    for(i = 0; i < n; i++) {
-        v += (num[i] - m)*(num[i] - m);
+    for(j = 0; j < n; j++) {
+        v += (num[j] - m)*(num[j] - m);
     }
+
     /*do {
         v += (num[i] - m)*(num[i] - m);
         num[i]++;
@@ -41,7 +43,7 @@ int main() {
     //printf("the v is %f \n", v);
 
     SD = sqrt(v / n);
-
+y
     printf("standard deviation is %f", SD);
 
 
