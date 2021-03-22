@@ -36,7 +36,7 @@ int main() {
 
             printf("Would you like to send %d naira to this account number %d?\n", amount, acctNum);
             printf("Press 1 if Yes.\n");
-            printf("Press 2 if No.");
+            printf("Press 2 if No.\n");
             scanf("%d", &transfer);
 
             if(transfer == 1) {
@@ -47,7 +47,7 @@ int main() {
             }
             printf("Would you like to make another transaction?\n");
             printf("Press 1 if Yes.\n");
-            printf("Press 2 if No.");
+            printf("Press 2 if No.\n");
             scanf("%d", &anotherTransaction);
             if(anotherTransaction == 1) {
                 beginning();
@@ -70,7 +70,7 @@ int main() {
 
             printf("Would you like to make another transaction?\n");
             printf("Press 1 if Yes.\n");
-            printf("Press 2 if No.");
+            printf("Press 2 if No.\n");
             scanf("%d", &anotherTransaction);
             if(anotherTransaction == 1) {
                 beginning();
@@ -86,7 +86,7 @@ int main() {
 
             printf("Would you like to make another transaction?\n");
             printf("Press 1 if Yes.\n");
-            printf("Press 2 if No.");
+            printf("Press 2 if No.\n");
             scanf("%d", &anotherTransaction);
             if(anotherTransaction == 1) {
                 beginning();
@@ -98,14 +98,14 @@ int main() {
             printf("Press 2 for Savings.\n");
             scanf("%d", &acctType);
 
-            printf("How much do you want to deposit?");
+            printf("How much do you want to deposit?\n");
             scanf("%d", &deposit);
             money = money + deposit;
             printf("You have deposited %d Naira and have %d Naira in your account.", deposit, money);
 
             printf("Would you like to make another transaction?\n");
             printf("Press 1 if Yes.\n");
-            printf("Press 2 if No.");
+            printf("Press 2 if No.\n");
             scanf("%d", &anotherTransaction);
             if(anotherTransaction == 1) {
                 beginning();
@@ -117,14 +117,14 @@ int main() {
         return 0;
     }
 
-    printf("Tomi's ATM machine.\n");
+    printf("\t\t\tTomi's ATM machine.\n");
     printf("Enter pin: ");
     scanf("%d", &pin);
     if(pin != 1985) {
         printf("Error! Enter the correct pin: ");
         scanf("%d", &pin);
-        beginning();
     }
+
     beginning();
 
 

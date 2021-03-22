@@ -6,9 +6,7 @@ int main() {
     printf("Enter your score: ");
     scanf("%d", &score);
 
-    //int a = score >= 80;
-
-    switch(score/ 10) {
+    switch(score / 10) {
         case 10 :
         case 9 :
         case 8 :
