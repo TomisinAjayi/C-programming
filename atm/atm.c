@@ -43,7 +43,7 @@ int main() {
                 money = money - amount;
                 printf("TRANSACTION SUCCESSFUL.");
             } else {
-                printf("TRANSACTION UNSUCCESFUL.");
+                printf("TRANSACTION UNSUCCESSFUL.");
             }
             printf("Would you like to make another transaction?\n");
             printf("Press 1 if Yes.\n");
@@ -124,11 +124,7 @@ int main() {
         printf("Error! Enter the correct pin: ");
         scanf("%d", &pin);
     }
-
     beginning();
-
-
-
 
     return 0;
 }

@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<string.h>
 
 int main() {
     /*float a = 20.0;
@@ -50,7 +51,8 @@ int main() {
     float avg = sum / 5;
     printf("Average is %f", avg);*/
 
-    int n, i;
+    //average of any number from 1 - 100
+    /*int n, i;
     float num[100], sum = 0.0, avg;
 
     printf("Enter the numbers of elements: ");
@@ -68,6 +70,36 @@ int main() {
         sum += num[i];
     }
     avg = sum / n;
-    printf("Average = %.2f", avg);
+    printf("Average = %.2f", avg);*/
+
+    /*int tomi[5];
+    tomi[0] = 10;
+    tomi[1] = 20;
+    tomi[2] = 30;
+    tomi[3] = 40;
+    tomi[4] = 50;
+
+    for(int num = 0; num < 5; num++) {
+        printf("Tomi is %d\n", num[tomi]);
+    }*/
+
+    /*char name[7] = "tomisin";
+    for(int i = 0; i < 7; i++) {
+        printf("%c", name[i]);
+    }*/
+
+    char somename = 'A';
+    char letter[1];
+
+    printf("Enter any letter (A-Z): ");
+    scanf("%c", &letter);
+
+    if((strcmp(somename, letter)) == 0) {
+        printf("You just typed letter A");
+    } else {
+        printf("You didn't type my letter");
+    }
+
+
     return 0;
 }
