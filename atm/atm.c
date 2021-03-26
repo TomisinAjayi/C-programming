@@ -45,7 +45,7 @@ int main() {
             } else {
                 printf("TRANSACTION UNSUCCESSFUL.");
             }
-            printf("Would you like to make another transaction?\n");
+            printf("\nWould you like to make another transaction?\n");
             printf("Press 1 if Yes.\n");
             printf("Press 2 if No.\n");
             scanf("%d", &anotherTransaction);
@@ -68,7 +68,7 @@ int main() {
                 printf("You have withdrawn %d Naira and you have %d left.", withdraw, money);
             }
 
-            printf("Would you like to make another transaction?\n");
+            printf("\nWould you like to make another transaction?\n");
             printf("Press 1 if Yes.\n");
             printf("Press 2 if No.\n");
             scanf("%d", &anotherTransaction);
@@ -84,7 +84,7 @@ int main() {
 
             printf("You have %d Naira in your account.", money);
 
-            printf("Would you like to make another transaction?\n");
+            printf("\nWould you like to make another transaction?\n");
             printf("Press 1 if Yes.\n");
             printf("Press 2 if No.\n");
             scanf("%d", &anotherTransaction);
@@ -103,7 +103,7 @@ int main() {
             money = money + deposit;
             printf("You have deposited %d Naira and have %d Naira in your account.", deposit, money);
 
-            printf("Would you like to make another transaction?\n");
+            printf("\nWould you like to make another transaction?\n");
             printf("Press 1 if Yes.\n");
             printf("Press 2 if No.\n");
             scanf("%d", &anotherTransaction);
