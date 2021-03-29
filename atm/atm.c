@@ -120,7 +120,7 @@ int main() {
     printf("\t\t\tTomi's ATM machine.\n");
     printf("Enter pin: ");
     scanf("%d", &pin);
-    if(pin != 1985) {
+    for(int pin = 0; pin != 1985;) {
         printf("Error! Enter the correct pin: ");
         scanf("%d", &pin);
     }

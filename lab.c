@@ -323,9 +323,80 @@ int main() {
 
 
     //loop
-    for(int i = 0; i < 100; i++) {
-        printf("%d Existence is pain.\n", i+1);
+    /*for(int i = 0; i < 100; i++) {
+        printf("%d. Existence is pain.\n", i+1);
+    }*/
+
+    /*int num = 0;
+    printf("Print even numbers from 1 - 25.\n");
+    for(int x = 1; x <= 25; x++) {
+        num = x % 2;
+        if(num == 0) {
+            printf("%d\n", x);
+        }
+    }*/
+    //or
+    /*for(int x = 2; x <= 25; x+=2) {
+        printf("%d\n", x);
+    }*/
+
+    /*int a, b, max;
+    printf("Please enter the max value.n");
+    printf("For which a table can be printed: ");
+    scanf("%d", &max);
+    for(a = 0, b = max; a <= max; a++, b--) {
+        printf("\n%d + %d = %d", a, b, a + b);
+    }*/
+
+    //times table
+    /*int num, times;
+    printf("Multiplication table. Up to number 12\n");
+    printf("Enter number of times: ");
+    scanf("%d", &num);
+    for(int i = 0; i <= 12; i++) {
+        times = num * i;
+        printf("%d x %d = %d\n", i, num, times);
     }
+
+    int a, b, c;
+    a = 0;
+    printf("Enter no of rows: ");
+    scanf("%d", &a);
+    printf("\n");
+    for(b = 0; b < a; b++) {
+        printf("\n");
+        for(c = 0; c <= b; c++) {
+            printf("*");
+        }
+    }*/
+
+    /*int num;
+    for(num = 0; num != 255;) {
+        printf("Enter no: ");
+        scanf("%d", &num);
+    }*/
+
+    /*for( ; ;) {
+        printf("Existence is Pain!\n");
+    }*/
+
+    //infinite while
+    /*int count = 0;
+    while(count < 100) {
+        printf("This goes on forever, HELP!!!!\n");
+        count += 10;
+        printf("\t%d", count);
+        count -= 10;
+        printf("\t%d", count);
+        printf("\Ctrl - C will help");
+    }*/
+
+    // type casting, data-type conversion.
+    int sum = 17, count = 5;
+    double mean;
+
+    mean = (double) sum / count;
+    printf("Value of mean: %f\n", mean);
 
 
     return 0;
