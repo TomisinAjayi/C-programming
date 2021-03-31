@@ -322,7 +322,7 @@ int main() {
     }*/
 
 
-    //loop
+//loop
     /*for(int i = 0; i < 100; i++) {
         printf("%d. Existence is pain.\n", i+1);
     }*/
@@ -398,7 +398,53 @@ int main() {
     mean = (double) sum / count;
     printf("Value of mean: %f\n", mean);*/
 
+    //try it
+    /*int num;
+    for (num = 100; num >= 5; num--) {
+        if(num % 5 == 0) {
+            printf("%d\t", num);
+        }
+    }*/
+    /*int num1, num2;
+    int sum = 0;
+    printf("Enter number 1: ");
+    scanf("%d", &num1);
+    printf("Enter number 2: ");
+    scanf("%d", &num2);
 
+    if(num1 % 2 != 0 && num2 % 2 != 0) {
+        sum = num1 + num2;
+        printf("sum is %d", sum);
+    } else {
+        printf("At least one is even, can't sum");
+    }*/
+
+    //fibonacci sequence
+
+    //4.a
+    /*int a, b, c;
+    /*a = 0;
+    printf("Enter no of rows: ");
+    scanf("%d", &a);
+    printf("\n");*/
+    /*for(b = 0; b < 7; b++) {
+        printf("\n");
+        for(c = b; c <= b; c--) {
+            printf("*");
+        }
+    }*/
+
+    char name[5];
+    int age;
+
+    printf("Enter Name: ");
+    scanf("%s", &name);
+    printf("Enter Age: ");
+    scanf("%d", &age);
+
+    for(int i = 0; i < age; i++) {
+        printf("%d. %s\n", i+1, name);
+    }
 
 
     return 0;
