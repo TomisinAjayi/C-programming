@@ -19,5 +19,6 @@ int main() {
 
     printf("The area of the cuboid is %d", area);
 
+
     return 0;
 }

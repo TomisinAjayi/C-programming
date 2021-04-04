@@ -88,7 +88,7 @@ int main() {
         printf("%c", name[i]);
     }*/
 
-    char somename = 'A';
+    /*char somename = 'A';
     char letter[1];
 
     printf("Enter any letter (A-Z): ");
@@ -98,8 +98,41 @@ int main() {
         printf("You just typed letter A");
     } else {
         printf("You didn't type my letter");
-    }
+    }*/
 
+    /*int ary[3][4] = {{1,2,3,4},{5,6,7,8},{9,10,11,12}};
+    //or int ary[3][4] = {1,2,3,4,5,6,7,8,9,10,11,12};
+    printf("%d", ary[1][1]);*/
+
+    int i, n = 0;
+    int item;
+    char x[10][12];
+    char temp[12];
+
+    printf("Enter each string on a separate line\n\n");
+    printf("Type 'END' when over \n\n");
+    // read in the list of strings
+    do {
+        printf("String %d : ", n + 1);
+        scanf("%s", x[n]);
+    } while(strcmp(x[n++], "END"));
+    //reorder the list of strings
+    n = n - 1;
+    // find lowest of remaining strings
+    for(item = 0; item < n-1; item++) {
+        for(i = item + 1; i < n; i++) {
+            if(strcmp(x[item], x[i]) > 0) {
+                strcpy(temp, x[item]);
+                strcpy(x[item], x[i]);
+                strcpy(x[i], temp);
+            }
+        }
+    }
+    // display arranged list of strings
+    printf("Recorded list of strings : \n");
+    for(i = 0; i < n; i++) {
+        printf("\nString %d is %s", i + 1, x[i]);
+    }
 
     return 0;
 }

@@ -18,14 +18,24 @@ int main() {
         puts("This is english.");
 
     } else if(strcmp(choice, "b") == 0) {
-        puts("Eleyi ni Yoruba");
+        puts("This is Yoruba");
     } else if(strcmp(choice, "c") == 0) {
-        puts("dis one be pidgin");
+        puts("This is pidgin");
     } else if(strcmp(choice, "*") == 0) {
         puts("Thank you.");
         exit(0);
     } else {
         puts("Invalid choice!");
     }
+
+    /*
+    strcpy(s1, s2) : copy s2 into s1;
+    strcat(s1, s2) : joins s2 to end of s1;
+    strlen(s1) : return length of s1;
+    strcmp(s1, s2) : compares s1 and s2, return 0 if same, less than o if s1<s2 and greater than 0 if s1>s2;
+    strchr(s1, ch) : returns a pointer to first occurence of ch in s1;
+    strstr(s1, s2) : returns a pointer to first occurence of s1 in s1;
+    */
+
     return 0;
 }

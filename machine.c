@@ -9,7 +9,7 @@ int main()
  int deposit;
  char c;
 
- printf("Tomi's atm");
+ printf("Tomi's atm\n");
 
  printf("Kindly enter your pin: ");
  scanf("%d", &pin);
