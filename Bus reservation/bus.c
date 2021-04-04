@@ -2,7 +2,6 @@
 struct customer{
     char destination[2];//destination chosen
     char time[2]; // time chosen
-    int i; // loop
     char seats[3];// number of seats bought
 };
 void anthony() {
