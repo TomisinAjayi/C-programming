@@ -52,7 +52,7 @@ int main() {
     printf("Average is %f", avg);*/
 
     //average of any number from 1 - 100
-    /*int n, i;
+    int n, i;
     float num[100], sum = 0.0, avg;
 
     printf("Enter the numbers of elements: ");
@@ -70,7 +70,7 @@ int main() {
         sum += num[i];
     }
     avg = sum / n;
-    printf("Average = %.2f", avg);*/
+    printf("Average = %.2f", avg);
 
     /*int tomi[5];
     tomi[0] = 10;
@@ -104,7 +104,7 @@ int main() {
     //or int ary[3][4] = {1,2,3,4,5,6,7,8,9,10,11,12};
     printf("%d", ary[1][1]);*/
 
-    int i, n = 0;
+    /*int i, n = 0;
     int item;
     char x[10][12];
     char temp[12];
@@ -132,7 +132,7 @@ int main() {
     printf("Recorded list of strings : \n");
     for(i = 0; i < n; i++) {
         printf("\nString %d is %s", i + 1, x[i]);
-    }
+    }*/
 
     return 0;
 }

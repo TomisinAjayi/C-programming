@@ -6,3 +6,4 @@ Time: 5:00pm	Destination: Anthony	seat.no: 4
 Time: 1:00pm	Destination: Anthony	seat.no: 3
 Time: 1:00pm	Destination: Anthony	seat.no: 3
 Time: 3:00pm	Destination: Ketu	seat.no: 1
+Time: 1:00pm	Destination: Anthony	seat.no: 1
