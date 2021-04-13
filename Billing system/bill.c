@@ -1,29 +1,38 @@
 #include<stdio.h>
 #include<string.h>
+#include<stdlib.h>
 #include<time.h>
 
 struct bill{
     char name[50];
     char items[20];
     int totalItems;
-    int itemPrice[20];
-    int total;
+    char itemPrice[20];
+    char total[6];
 };
-void discount() {
+/*int discount() {
     struct bill customer;
-    printf("Items\t\t\tPrice");
+    time_t t;
+    time(&t);
+    customer.total = 0;
+    printf("Date & time: %s\n", ctime(t));
+    printf("Items\t\t\tPrice\n");
     for(int j = 0; j < customer.totalItems; j++) {
         printf("%s\t\t\t%d\n", customer.items[j], customer.itemPrice[j]);
-        customer.total += customer.itemPrice[j];
+        y = customer.total - '0';
+        y += x;
+        //customer.total += customer.itemPrice[i];
     }
-    printf("Total\t\t\t%d", customer.total);
-}
+    return customer.total;
+}*/
 int main() {
 
+    FILE *receipt;
     struct bill customer;
+    int x, y;
     printf("Customer Billing System.\n");
     printf("Enter Name: ");
-    scanf("%s", &customer.name);
+    gets(customer.name);
     printf("\nYou can only purchase up to 20 items.\n");
     printf("Buy 5 items or more, get 10%% off.\n");
     printf("Enter the total amount of items you want to purchase: ");
@@ -36,25 +45,37 @@ int main() {
     }
     for(int i = 0; i < customer.totalItems; i++) {
         printf("%d. Enter Item: ", i+1);
-        scanf("%s", &customer.items[i]);
+        gets(customer.items[i]);
         printf("Enter Price of item: ");
-        scanf("%d", &customer.itemPrice[i]);
+        gets(customer.itemPrice[i]);
+        x = customer.itemPrice[i] - '0';
+
     }
 
-    if(customer.totalItems > 5) {
-        printf("You purchased 5 items or more, you get 10%% off.\n");
-        discount();
-        customer.total = (9 * customer.total) / 10;
-        printf("Discounted Price\t\t\t%d", customer.total);
+    if(customer.totalItems >= 5) {
+        printf("!!!You purchased 5 items or more, you get 10%% off.!!!\n");
+        //discount();
+        printf("Total\t\t\t%d", y);
+        y = (9 * y) / 10;
+        printf("\nDiscounted Price\t%d", y);
     } else {
-        discount();
+        //discount();
+        printf("Total\t\t\t%d", y);
     }
 
-    /* generating date and time
-    time_t t;   // not a primitive datatype
-    time(&t);
+    receipt = fopen("receipt.txt", "a");
+    fputs("Name of customer: ", receipt);
+    fputs(customer.name, receipt);
+    fputs("\n", receipt);
+    fputs("Item\t\t\tPrice", receipt);
+    for(int a = 0; a < customer.totalItems; a++) {
+        fputs(customer.items[a],receipt);
+        fputs("\t\t\t", receipt);
+        fputs(customer.itemPrice[a], receipt);
+    }
+    fputs("Price Paid:\t\t", receipt);
+    fputs(customer.total, receipt);
+    fclose(receipt);
 
-    printf("\nThis program has been written at (date and time): %s", ctime(&t));
-    */
     return 0;
 }
