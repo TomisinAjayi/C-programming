@@ -8,8 +8,8 @@ int main() {
     int units[20];
     int totalCourse;
     int score;
-    int totalUnits =0;
-    int total= 0;
+    int totalUnits = 0;
+    int total = 0;
     long int matricnumber;
 
     printf("Calculate your cgpa.\n");
